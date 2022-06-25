@@ -83,7 +83,7 @@
                         </li>
                     </ul>
                     <div class="w-75 mx-auto container mt-3">
-                        <a class="btn btn-primary btn-lg d-block">
+                        <a class="btn btn-primary btn-lg d-block" data-bs-toggle="modal" data-bs-target="#addSideBackdrop">
                             <span class="display-6">Add a new side</span>
                         </a>
                     </div>
@@ -120,7 +120,57 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="addSideBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-8" id="staticBackdropLabel">Add a new side to the Cube</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="name">Side's Name</label></div>
+                        <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Name that will be displayed on the cube..." required>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="image">Static Image</label></div>
+                        <input type="file" id="image" name="image" class="form-control mb-4" required>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="image">Type of Side</label></div>
+                        <select id="choice" name="choice" class="form-control mb-4">
+                            <option value="0">Static</option>
+                            <option value="1">Link</option>
+                            <option value="2">Twitter Feed</option>
+                            <option value="3">YouTube Video</option>
+                            <option value="4">Image Gallery</option>
+                        </select>
+                        <div id="choices" class="w-100 mt-3">
+                            <div id="linkDiv">
+                                <div class="display-10 mb-2 text-darklabs col-12"><label for="link">Link</label></div>
+                                <input type="text" id="link" name="link" class="form-control" placeholder="Link that we go to when clicking the cube...">
+                            </div>
+                            <div id="videoDiv">
+                                <div class="display-10 mb-2 text-darklabs col-12"><label for="video">Video</label></div>
+                                <input type="text" id="video" name="video" class="form-control" placeholder="Link to a YouTube video that will be opened...">
+                            </div>
+                            <div id="twitterDiv">
+                                <div class="display-10 mb-2 text-darklabs col-12"><label for="username">Twitter Username</label></div>
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Username of the user that we list the feed for...">
+                            </div>
+                            <div id="imageDiv">
+                                <div class="display-10 mb-2 text-darklabs col-12"><label for="imageGallery">Image Gallery</label></div>
+                                <input type="file" id="imageGallery" name="imageGallery" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="cube_demo/cube_script.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="cube_demo/script.js"></script>
 </body>
 </html>
