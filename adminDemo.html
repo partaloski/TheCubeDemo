@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register a new Creator</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container my-3 bg-dark bg-opacity-5 shadow-labs p-5">
+        <h1 class="display-1 text-center text-labs my-3 rounded-3">Log In</h1>
+        <div class="border border-3 border-labs w-75 mx-auto d-block opacity-50 mb-5"></div>
+        <h3 class="display-10 w-75 mx-auto">Currently Registered Creators in the system:</h3>
+        <ul class="list-group w-75 mx-auto px-4 py-3">
+            <li class="list-group-item list-group-item-secondary">
+                <ul class="list-group list-group-horizontal my-3 fw-bold">
+                    <li class="list-group-item list-group-item-labs col-3 px-2 opacity-100">Username</li>
+                    <li class="list-group-item list-group-item-labs col-4 px-2 opacity-100">E-Mail</li>
+                    <li class="list-group-item list-group-item-labs col-5 px-2 opacity-100">Description</li>
+                </ul>
+                <ul class="list-group list-group-horizontal my-2">
+                    <li class="list-group-item list-group-item-labs col-3 px-2 opacity-75">example2</li>
+                    <li class="list-group-item list-group-item-labs col-4 px-2 opacity-75">example2@gmail.com</li>
+                    <li class="list-group-item list-group-item-labs col-5 px-2 opacity-75">The client from the firm 'Example2'</li>
+                </ul>
+                <ul class="list-group list-group-horizontal my-2">
+                    <li class="list-group-item list-group-item-labs col-3 px-2 opacity-75">housing77</li>
+                    <li class="list-group-item list-group-item-labs col-4 px-2 opacity-75">housing77@gmail.com</li>
+                    <li class="list-group-item list-group-item-labs col-5 px-2 opacity-75">The client from the firm 'Housing77'</li>
+                </ul>
+                <ul class="list-group list-group-horizontal my-2">
+                    <li class="list-group-item list-group-item-labs col-3 px-2 opacity-75">realEstateStar</li>
+                    <li class="list-group-item list-group-item-labs col-4 px-2 opacity-75">realEstateStar@gmail.com</li>
+                    <li class="list-group-item list-group-item-labs col-5 px-2 opacity-75">The client from the firm 'Real Estate Star'</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="mt-5 p-3 w-75 mx-auto">
+            <a class="btn btn-secondary btn-lg d-block p-3" data-bs-toggle="modal" data-bs-target="#addCreatorBackdrop">
+                <span class="display-6">Register a new creator</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="addCreatorBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-8" id="staticBackdropLabel">Register a New Creator</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="name">Username</label></div>
+                        <input type="text" id="name" name="name" class="form-control mb-4" placeholder="The username the creator will use to log in..." required/>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="email">E-Mail</label></div>
+                        <input type="text" id="email" name="email" class="form-control mb-4" placeholder="The e-mail attached to the creator..." required/>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="password">Password</label></div>
+                        <input type="password" id="password" name="password" class="form-control mb-4" placeholder="The password used to log-in..." required/>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="cPassword">Confirm Password</label></div>
+                        <input type="cPassword" id="cPassword" name="cPassword" class="form-control mb-4" placeholder="Repeat the password..." required/>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label>Client Description</label></div>
+                        <textarea id="description" name="description" class="form-control" placeholder="The description of who the creator is..." rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center w-100 mx-auto">
+                        <a class="btn btn-secondary btn-lg w-40 mx-auto" data-bs-dismiss="modal">Cancel</a>
+                        <a class="btn btn-labs btn-lg w-40 mx-auto" data-bs-dismiss="modal"><span class="text-black">Add</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="cube_demo/cube_script.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

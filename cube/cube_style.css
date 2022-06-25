@@ -46,9 +46,9 @@
     opacity: 0.9;
     height: 400px;
     width: 400px;
-    background: radial-gradient(limegreen, #7cc20e, rgba(255,255,255,0.85), rgba(255,255,255,0.65));
-    background-size: 400px 400px;
-    border: rgba(192,192,192,0.8) solid 0.5rem;
+    background-image: url('cube.png');
+    background-size: 375px 375px;
+    border: rgba(255,128,128,0.8) solid 0.5rem;
     -webkit-touch-callout: none;
     -moz-touch-callout: none;
     -ms-touch-callout: none;
