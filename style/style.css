@@ -1,0 +1,154 @@
+.text-labs{
+    color: #8fe10f;
+}
+
+.text-darklabs{
+    color: #89d70b;
+}
+
+.shadow-labs{
+    box-shadow: rgba(67, 110, 0, 0.5) 0 0 3rem;
+}
+
+.shadow-labs-sm{
+    box-shadow: rgba(125, 192, 22, 0.5) 0 0 1rem;
+}
+
+.btn-labs{
+    transition: 200ms;
+    opacity: 0.6 !important;
+    color: white;
+    background-color: #8edc13;
+    border-color: #5b9300;
+}
+
+.btn-labs:hover{
+    color: white;
+    opacity: 1 !important;
+}
+
+.btn-darklabs{
+    transition: 200ms;
+    opacity: 0.9 !important;
+    color: white;
+    background-color: #8fde19;
+    border-color: #4d7c00;
+}
+
+.btn-darklabs:hover{
+    color: white;
+    opacity: 1 !important;
+}
+
+.form-control:focus{
+    border-color: rgba(125, 192, 22, 1);
+    box-shadow: #8fe10f 0rem 0rem 0.6rem !important;
+}
+
+.bg-labs{
+    background-color: #8fe10f;
+}
+
+.border-labs{
+    border-color: #8fe10f !important;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.demo-side {
+    top: 20%;
+    position: relative;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.display-8{
+    font-size: calc(1rem + 1.05vw);
+    font-weight: 275;
+    line-height: 1.2;
+}
+
+.display-10{
+    font-size: calc(0.8rem + 0.9vw);
+    font-weight: 275;
+    line-height: 1.1;
+}
+
+.display-11{
+    font-size: calc(0.7rem + 0.8vw);
+    font-weight: 275;
+    line-height: 0.9;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.click-this{
+    transition: 200ms;
+}
+
+.click-this:hover{
+    color: #436e00;
+}
+
+.form-control{
+    font-size: calc(0.6rem + 0.7vw);
+    font-weight: 275;
+}
+
+.bg-opacity-5{
+    --bs-bg-opacity: 0.05;
+}
+
+.list-group-item-labs{
+    transition: 250ms;
+    opacity: 0.7;
+    color: black;
+    background-color: rgba(143, 225, 15, 0.35);
+}
+
+.list-group-item-labs:hover{
+    opacity: 1;
+    background-color: rgba(149, 255, 0, 0.62);
+}
+
+.list-group-item-labs-light{
+    transition: 250ms;
+    opacity: 0.7;
+    color: #72ab1d;
+    box-shadow: rgba(0,0,0,0.5) 0 0 0.8rem;
+    background-color: rgba(161, 255, 19, 0.18);
+}
+
+.list-group-item-labs-light:hover{
+    color: black;
+    opacity: 1;
+    background-color: rgba(161, 255, 19, 0.29);
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+#demoBtn{
+    transition: 300ms;
+    top: 3%;
+    left: 3%;
+    opacity: 0.15 !important;
+    color: black !important;
+}
+
+#demoBtn:hover{
+    opacity: 0.7 !important;
+}
+
+.w-40{
+    width: 40%;
+}
