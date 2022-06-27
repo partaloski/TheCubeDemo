@@ -48,7 +48,7 @@
     width: 400px;
     background-image: url('cube.png');
     background-size: 375px 375px;
-    border: rgba(255,128,128,0.8) solid 0.5rem;
+    border: rgb(183, 255, 80) solid 0.5rem;
     -webkit-touch-callout: none;
     -moz-touch-callout: none;
     -ms-touch-callout: none;
