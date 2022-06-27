@@ -19,7 +19,7 @@
     opacity: 0.6 !important;
     color: white;
     background-color: #8edc13;
-    border-color: #5b9300;
+    border-color: #7ecb04;
 }
 
 .btn-labs:hover{
@@ -32,7 +32,20 @@
     opacity: 0.9 !important;
     color: white;
     background-color: #8fde19;
-    border-color: #4d7c00;
+    border-color: #72b605;
+}
+
+.btn-delete{
+    transition: 200ms;
+    opacity: 0.9 !important;
+    color: white;
+    background-color: #ff5062;
+    border-color: #ff005f;
+}
+
+.btn-delete:hover{
+    color: white;
+    opacity: 1 !important;
 }
 
 .btn-darklabs:hover{
@@ -47,6 +60,11 @@
 
 .bg-labs{
     background-color: #8fe10f;
+}
+
+
+.bg-darklabs{
+    background-color: #85d00b;
 }
 
 .border-labs{

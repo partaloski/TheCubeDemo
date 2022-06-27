@@ -7,10 +7,41 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <div class="container-fluid w-100 m-0 sticky-top p-0 bg-labs shadow mb-5">
+    <nav class="navbar container-fluid px-5 navbar-dark bg-labs pb-3">
+        <a class="navbar-brand d-lg-block d-sm-none" href="index.html"><img width="64" height="64" src="cube/logo.png"/></a>
+        <a class="navbar-brand d-sm-block d-lg-none" href="index.html"><img width="128" height="128" src="cube/logo.png"/></a>
+        <a class="nav-item ms-auto me-3 text-decoration-none btn btn-outline-light d-lg-block d-sm-none" href="#">
+            Hello, Admin
+        </a>
+        <a class="nav-item ms-auto me-3 text-decoration-none btn btn-outline-light d-lg-none d-sm-block btn-lg" href="#">
+            Hello, Admin
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-darklabs rounded-3 text-dark p-3 fade" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="adminDemo.html">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
     <div class="container my-3 bg-dark bg-opacity-5 shadow-labs p-5">
-        <h1 class="display-1 text-center text-labs my-3 rounded-3">Log In</h1>
-        <div class="border border-3 border-labs w-75 mx-auto d-block opacity-50 mb-5"></div>
-        <h3 class="display-10 w-75 mx-auto">Currently Registered Creators in the system:</h3>
+        <h1 class="display-3 text-center text-labs my-3 rounded-3">Admin's Dashboard</h1>
+        <div class="border border-3 border-labs w-75 mx-auto d-block opacity-50 mb-5 rounded-pill"></div>
+        <h3 class="display-11 w-75 mx-auto">Currently Registered Creators in the system:</h3>
         <ul class="list-group w-75 mx-auto px-4 py-3">
             <li class="list-group-item list-group-item-secondary">
                 <ul class="list-group list-group-horizontal my-3 fw-bold">
