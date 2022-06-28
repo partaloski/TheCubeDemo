@@ -247,3 +247,7 @@
     left:2.6%;
     opacity: 1;
 }
+
+#expandContentBtn{
+    transition: 200ms;
+}
