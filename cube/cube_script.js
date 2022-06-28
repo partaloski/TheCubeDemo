@@ -283,10 +283,10 @@ Viewport.prototype.animate = function() {
 }
 var viewport = new Viewport({
     element: document.getElementsByClassName('cube')[0],
-    fps: 20,
+    fps: 30,
     sensivity: .1,
     sensivityFade: .93,
-    speed: 2,
+    speed: 1.8,
     touchSensivity: 1.5
 });
 

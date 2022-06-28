@@ -47,11 +47,18 @@
 }
 
 .btn-darklabs{
-    transition: 200ms;
+    transition: 250ms;
     opacity: 0.9 !important;
     color: white;
     background-color: #8fde19;
     border-color: #72b605;
+}
+
+
+.btn-darklabs:hover{
+    color: white;
+    background-color: #a3ff1a;
+    opacity: 1 !important;
 }
 
 
@@ -68,10 +75,6 @@
     opacity: 1 !important;
 }
 
-.btn-darklabs:hover{
-    color: white;
-    opacity: 1 !important;
-}
 
 .form-control:focus{
     border-color: rgba(125, 192, 22, 1);
