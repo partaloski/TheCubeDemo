@@ -193,3 +193,57 @@
 .w-40{
     width: 40%;
 }
+
+@keyframes animate_cubes {
+    0%{left: -105%; opacity: 0.3;}
+    100%{left: 3%; opacity: 1; top:17%;}
+}
+
+@keyframes animate_cubes2 {
+    0%{left: -105%; opacity: 0.3}
+    100%{left: 2.6%; opacity: 1; top:16.5%}
+}
+
+#cubesIcon{
+    left: -105%;
+    z-index: 2;
+    width: 20%;
+    opacity: 0.3;
+    transition: 600ms;
+    top:16.5%;
+}
+
+#cubesIcon2{
+    left: -105%;
+    width: 20%;
+    z-index: 1;
+    opacity: 0.3;
+    transition: 600ms;
+    top:17%;
+}
+
+#addbutton:hover ~ #cubesIcon{
+    animation-name: animate_cubes;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+#addbutton:hover ~ #cubesIcon2{
+    animation-name: animate_cubes2;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+#addbutton:focus ~ #cubesIcon{
+    left:3%;
+    top: 17%;
+    opacity: 1;
+}
+
+#addbutton:focus ~ #cubesIcon2{
+    top:16.5%;
+    left:2.6%;
+    opacity: 1;
+}

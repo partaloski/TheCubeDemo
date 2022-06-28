@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<div class="d-none">
 
-</div>
-
-<div class="container-fluid w-100 m-0 sticky-top p-0 bg-labs shadow">
+    <div class="container-fluid w-100 m-0 sticky-top p-0 bg-labs shadow">
         <nav class="navbar container-fluid px-5 navbar-dark bg-labs pb-3">
             <a class="navbar-brand d-lg-block d-sm-none" href="index.html"><img width="64" height="64" src="cube/logo.png"/></a>
             <a class="navbar-brand d-sm-block d-lg-none" href="index.html"><img width="128" height="128" src="cube/logo.png"/></a>
@@ -66,6 +63,13 @@
         </nav>
     </div>
     <div class="container w-75 mx-auto my-5">
+        <a href="#" class="btn btn-darklabs d-block w-50 mx-auto btn-lg py-2 my-5" id="addbutton" data-bs-toggle="modal" data-bs-target="#addCubeBackdrop">Add a New Cube</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" id='cubesIcon' fill="#95FF00" class="bi bi-boxes position-absolute" viewBox="0 0 16 16">
+            <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" id='cubesIcon2' fill="#838383" class="bi bi-boxes position-absolute" viewBox="0 0 16 16">
+            <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+        </svg>
         <div class="d-flex container justify-content-center flex-wrap">
             <div class="card col-lg-3 col-sm-10 m-3 shadow-labs-sm">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/3D_model_of_a_Cube.stl/800px-3D_model_of_a_Cube.stl.png" class="card-img-top" alt="...">
@@ -133,6 +137,37 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="addCubeBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-8" id="staticBackdropLabel">Add a new Cube</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="name">Name</label></div>
+                        <input type="text" id="name" name="name" class="form-control mb-4" placeholder="The name of the Cube..." required/>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="description">Cube Description</label></div>
+                        <textarea id="description" name="description" class="form-control" placeholder="The description of the cube..." rows="5"></textarea>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="password">URL Suffix</label></div>
+                        <input type="name" id="suffix" name="suffix" class="form-control mb-4" placeholder="Where the cube will be located on the server..." required/>
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="password">Background Image</label></div>
+                        <input type="file" id="image" name="image" class="form-control mb-4"  required/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center w-100 mx-auto">
+                        <a class="btn btn-secondary btn-lg w-40 mx-auto" data-bs-dismiss="modal">Cancel</a>
+                        <a class="btn btn-labs btn-lg w-40 mx-auto" data-bs-dismiss="modal"><span class="text-black">Add</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
