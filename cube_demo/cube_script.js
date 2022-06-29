@@ -130,24 +130,24 @@ function Viewport(data) {
     this.calculatedSide = 0;
 
 
-    bindEvent(document, 'mousedown', function() {
+    bindEvent(document.getElementById("viewport"), 'mousedown', function() {
         self.down = true;
     });
 
-    bindEvent(document, 'mouseup', function() {
+    bindEvent(document.getElementById("viewport"), 'mouseup', function() {
         self.down = false;
     });
 
-    bindEvent(document, 'keyup', function() {
+    bindEvent(document.getElementById("viewport"), 'keyup', function() {
         self.down = false;
     });
 
-    bindEvent(document, 'mousemove', function(e) {
+    bindEvent(document.getElementById("viewport"), 'mousemove', function(e) {
         self.mouseX = e.pageX;
         self.mouseY = e.pageY;
     });
 
-    bindEvent(document, 'touchstart', function(e) {
+    bindEvent(document.getElementById("viewport"), 'touchstart', function(e) {
 
         self.down = true;
         e.touches ? e = e.touches[0] : null;
@@ -157,7 +157,7 @@ function Viewport(data) {
         self.lastY  = self.mouseY;
     });
 
-    bindEvent(document, 'touchmove', function(e) {
+    bindEvent(document.getElementById("viewport"), 'touchmove', function(e) {
         if(e.preventDefault) {
             e.preventDefault();
         }

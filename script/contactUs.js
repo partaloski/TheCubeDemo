@@ -5,4 +5,6 @@ $(document).ready(function (){
         $("#carouselExampleSlidesOnly").slideDown();
         $("#expandContentBtn").toggleClass("d-none")
     })
+
+
 })
