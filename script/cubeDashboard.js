@@ -1,4 +1,18 @@
 $(document).ready(function (){
+    let card = $(".cube-card")
+    let container = $("#cube-card-container")
+
+    $(card).clone().appendTo(container)
+    $(card).clone().appendTo(container)
+    $(card).clone().appendTo(container)
+    $(card).clone().appendTo(container)
+    $(card).clone().appendTo(container)
+    $(card).clone().appendTo(container)
+    $(card).clone().appendTo(container)
+    $(card).clone().appendTo(container)
+
+
+
     $("#addCubeBtn").mouseenter(function (){
         $("#cubesIcon").animate({left: '2.6%', opacity: '1'}, "fast")
         $("#cubesIcon2").animate({left: '3%', opacity: '1'}, "fast")
