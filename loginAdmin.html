@@ -18,13 +18,18 @@
         <div class="border border-3 border-labs w-75 mx-auto d-block opacity-50"></div>
         <div class="row d-flex flex-wrap justify-content-center form-group col-lg-6 col-sm-10 mx-auto mt-5">
             <div class="col-sm-12 display-8 d-lg-none mb-2 text-darklabs"><label for="username">Username</label></div>
-            <div class="col-lg-5 display-8 d-lg-block d-sm-none text-right text-darklabs"><label for="username">Username</label></div>
+            <div class="col-lg-3 display-8 d-lg-block d-sm-none text-darklabs"><label for="username">Username</label></div>
             <div class="col-lg-7 col-sm-12"><input type="text" class="form-control" id="username" name="username"/></div>
         </div>
         <div class="row d-flex flex-wrap justify-content-center form-group col-lg-6 col-sm-10 mx-auto mt-5">
-            <div class="col-sm-12 display-8 d-lg-none mb-2 text-darklabs"><label for="password">Username</label></div>
-            <div class="col-lg-5 display-8 d-lg-block d-sm-none text-right text-darklabs"><label for="password">Password</label></div>
+            <div class="col-sm-12 display-8 d-lg-none mb-2 text-darklabs"><label for="password">Password</label></div>
+            <div class="col-lg-3 display-8 d-lg-block d-sm-none text-darklabs"><label for="password">Password</label></div>
             <div class="col-lg-7 col-sm-12"><input type="password" class="form-control" id="password" name="password"/></div>
+        </div>
+        <div class="row d-block col-lg-6 col-sm-12 mx-auto pe-lg-3 mt-3">
+            <a class="text-labs" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">
+                <span class="display-11 float-end me-5">Forgot password?</span>
+            </a>
         </div>
         <div class="row d-flex flex-wrap justify-content-center form-group col-lg-6 col-sm-10 mx-auto mt-5">
             <a id="adminLogin" class="btn btn-labs btn-lg d-block w-75 mx-auto btn-labs">
@@ -33,6 +38,12 @@
                 </span>
             </a>
         </div>
+        <div id="errorsLogin" class="col-lg-6 col-sm-12 mx-auto border border-danger bg-danger bg-opacity-50 p-3 rounded-3 mt-5">
+            <p class="text-light display-11 text-justify">
+                All of the fields are required.<br/>
+                Make sure that you have inputted your E-Mail and your Password correctly.
+            </p>
+        </div>
     </div>
     <a class="opacity-0 small" href="adminDemo.html" id="redirect">
         .
@@ -40,5 +51,35 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/admin.js"></script>
+
+
+    <div class="modal fade" id="forgotPasswordModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-8" id="staticBackdropLabel">Forgot Password?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group" id="inputs">
+                        <div class="display-10 mb-2 text-darklabs col-12"><label for="email">E-Mail</label></div>
+                        <input type="text" id="email" name="email" class="form-control mb-4" placeholder="E-Mail address of your account..." required>
+                    </div>
+                    <div id="forgotPasswordConfirmationDiv">
+                        <p class="display-11 text-justify text-labs">If there is an account with that e-mail address registered, you will get an e-mail that informs you of the steps that follow...</p>
+                    </div>
+                    <div id="errorsForgotPassword">
+                        <p class="display-11 text-justify text-danger">The field "E-Mail is required.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center w-100 mx-auto">
+                        <a class="btn btn-primary ms-auto me-2" id="forgotPasswordContinueBtn">Continue</a>
+                        <a class="btn btn-secondary" data-bs-dismiss="modal">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
