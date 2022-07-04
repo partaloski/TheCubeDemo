@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("#linkDiv").show()
     $("#videoDiv").hide()
     $("#imageDiv").hide()
     $("#twitterDiv").hide()
