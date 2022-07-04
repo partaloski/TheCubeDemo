@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $("#linkDiv").hide()
     $("#videoDiv").hide()
     $("#imageDiv").hide()
     $("#twitterDiv").hide()
@@ -7,8 +6,8 @@ $(document).ready(function(){
     $("#choice").change(function(){
         let val = $("#choice option:selected").val()
 
-        $("#linkDiv").hide()
         $("#videoDiv").hide()
+        $("#linkDiv").hide()
         $("#imageDiv").hide()
         $("#twitterDiv").hide()
 
