@@ -236,3 +236,20 @@
 .w-90{
     width: 82%;
 }
+
+.half{
+    margin-top: 125%;
+}
+
+w-110{
+    width: 110% !important;
+    display: block;
+}
+
+.order-1{
+    order:1
+}
+
+.order-2{
+    order:2
+}
