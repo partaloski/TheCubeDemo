@@ -238,7 +238,7 @@
 }
 
 .half{
-    margin-top: 125%;
+    margin-top: 80%;
 }
 
 w-110{
@@ -252,4 +252,20 @@ w-110{
 
 .order-2{
     order:2
+}
+
+table{
+    font-family: "Century Gothic";
+}
+
+table > thead > tr > th{
+    font-size: 1.5rem !important;
+}
+
+td{
+    color: rgb(94, 94, 94) !important;
+}
+
+.vh-25{
+    height: 50vh;
 }
