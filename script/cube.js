@@ -21,4 +21,11 @@ $(document).ready(function (){
         $(buttonCopy).removeClass("btn-info")
     })
 
+    let imageSelect = $("#images")
+
+    for(let i=0; i<10; i++){
+        let value = "Image " + (i+1)
+        $(imageSelect).append("<option>"+value+"</option>")
+    }
+
 })

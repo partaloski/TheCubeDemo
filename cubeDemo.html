@@ -422,16 +422,59 @@
                                 <input type="text" id="username" name="username" class="form-control" placeholder="Username of the user that we list the feed for...">
                             </div>
                             <div id="imageDiv">
-                                <div class="display-10 mb-2 text-darklabs col-12"><label for="imageGallery">Image Gallery</label></div>
-                                <input type="file" id="imageGallery" name="imageGallery" class="form-control">
+                                <div class="display-10 mb-2 text-darklabs col-12"><label for="images">Image Gallery</label></div>
+                                <span class="small text-muted">Hold down "CTRL" to select multiple images!</span>
+                                <select multiple name="images" id="images" class="form-control">
+                                </select>
+                                <br/>
+                                <a class="btn btn-labs btn-lg bg-primary bg-opacity-50 border-primary"
+                                   data-bs-target="#addNewImageBackdrop" data-bs-toggle="modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                                    </svg>
+                                    Add More Images
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div class="d-flex justify-content-center w-100 mx-auto">
-                        <a class="btn btn-secondary btn-lg w-40 mx-auto" data-bs-dismiss="modal">Cancel</a>
-                        <a class="btn btn-labs btn-lg w-40 mx-auto" data-bs-dismiss="modal"><span class="text-black">Add</span></a>
+                        <a class="btn btn-secondary btn-lg ms-auto" data-bs-dismiss="modal">Cancel</a>
+                        <a class="btn btn-labs btn-lg ms-3" data-bs-dismiss="modal"><span class="text-black">Confirm</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade "
+         id="addNewImageBackdrop"
+         data-bs-backdrop="static"
+         data-bs-keyboard="false"
+         tabindex="-1"
+         aria-labelledby="staticBackdropLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-8" id="label2">Add new Images</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <div class="container">
+                            <label for="newImage" class="display-10 text-darklabs mb-2">Choose your Image:</label>
+                            <input type="file" class="form-control" required id="newImage" name="newImage"/>
+                            <button type="submit" class="btn btn-darklabs btn-lg mt-4 d-block 50">Add Image</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center w-100 mx-auto">
+                        <a class="btn btn-secondary btn-lg ms-auto" data-bs-toggle="modal" data-bs-target="#addSideBackdrop">Back</a>
                     </div>
                 </div>
             </div>
