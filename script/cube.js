@@ -84,14 +84,6 @@ $(document).ready(function (){
                 }
             }
         }
-        for(let i=0;i<options.length;i++){
-            for(let j=0; j<selectedO.length; j++){
-                if(options[i]===selected[j]){
-                    options.prop("selected", "selected")
-                    break
-                }
-            }
-        }
         console.log(options)
         console.log(selected)
         $("#imagesSelected").empty()
