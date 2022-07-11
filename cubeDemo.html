@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="cube_demo/cube_style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/cube.js"></script>
 </head>
 <body>
@@ -450,9 +451,26 @@
                             </div>
                             <div id="imageDiv">
                                 <div class="display-10 mb-2 text-darklabs col-12"><label for="images">Image Gallery</label></div>
-                                <span class="small text-muted">Hold down "CTRL" to select multiple images!</span>
-                                <select multiple name="images" id="images" class="form-control">
-                                </select>
+                                <div class="row">
+                                    <div class="col ">
+                                        <h3 class="display-11 text-muted ">Selected images</h3>
+                                        <select multiple name="imagesSelected" id="imagesSelected" class="form-control">
+
+                                        </select>
+                                    </div>
+                                    <div class="col-2 d-flex flex-column justify-content-between">
+                                        <button id="btnGoLeft" class="w-90 mx-auto btn btn-lg btn-primary my-1"><span class="fa fa-arrow-left"></span></button>
+                                        <button id="btnMoveUp" class="w-90 mx-auto btn-lg btn-outline-primary my-1"><span class="fa fa-arrow-up"></span></button>
+                                        <button id="btnMoveDown" class="w-90 mx-auto btn-lg btn-outline-primary my-1"><span class="fa fa-arrow-down"></span></button>
+                                        <button id="btnGoRight" class="w-90 mx-auto btn btn-lg btn-primary my-1"><span class="fa fa-arrow-right"></span></button>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="display-11 text-muted ">Available images</h3>
+                                        <select multiple name="imagesLeft" id="imagesLeft" class="form-control">
+
+                                        </select>
+                                    </div>
+                                </div>
                                 <br/>
                                 <a class="btn btn-labs btn-lg bg-primary bg-opacity-50 border-primary"
                                    data-bs-target="#addNewImageBackdrop" data-bs-toggle="modal">
