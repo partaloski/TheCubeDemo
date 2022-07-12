@@ -66,23 +66,23 @@
 
         <div class="col-9 d-flex flex-row justify-content-between mx-auto mb-5 shadow rounded position-sticky">
                 <div class="mx-auto w-100">
-                    <ul class="list-unstyled list-group list-group-horizontal w-100 ">
-                        <li class="list-unstyled list-group-item list-group-flush list-group-horizontal w-100 text-center border-0">
+                    <ul class="list-unstyled list-group d-flex flex-sm-column flex-lg-row w-100">
+                        <li class="list-unstyled list-group-item list-group-flush  w-100 text-center border-0 mx-auto">
                             <a href="#" class="d-block bg-darklabs text-light text-decoration-none p-4" id="adminPanelBtn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-people-fill" viewBox="-2 0 20 20">
                                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                                     <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
                                     <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
                                 </svg>
-                                <span class="display-6">Manage Users</span>
+                                <span class="display-6">User Management Panel</span>
                             </a>
                         </li>
-                        <li class="list-unstyled list-group-item list-group-flush list-group-horizontal w-100 text-center  border-0">
+                        <li class="list-unstyled list-group-item list-group-flush  w-100 text-center border-0 mx-auto">
                             <a href="#" class="d-block bg-secondary text-light text-decoration-none p-4" id="creatorPanelBtn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-boxes" viewBox="-2 0 20 20">
                                     <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
                                 </svg>
-                                <span class="display-6">Manage Cubes</span>
+                                <span class="display-6">Cube Management Panel</span>
                             </a>
                         </li>
                     </ul>
@@ -91,7 +91,7 @@
         <div class="col-9 d-flex flex-wrap mx-auto" id="containerPanels">
 
             <div class="container my-3 bg-opacity-5 shadow-labs p-5 mx-auto" id="adminPanel">
-                <h1 class="display-5 text-center text-labs my-2 rounded-3">Administrator Panel</h1>
+                <h1 class="display-5 text-center text-labs my-2 rounded-3">User Management Panel</h1>
                 <div class="border border-3 border-labs w-90 mx-auto d-block opacity-50 mb-5 rounded-pill"></div>
                 <h3 class="display-11 w-90 mx-auto">Currently Registered Creators in the system:</h3>
                 <table class="table table-success table-striped col-sm-11 col-lg-8 w-90 mx-auto border border-3 border-success mt-3">
@@ -109,7 +109,7 @@
                         <td>real_estate77@gmail.com</td>
                         <td>An account for the firm "Real Estate 77"</td>
                         <td>
-                            <a class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteBackdrop">Deactivate Account</a>
+                            <a class="btn btn-danger btn-sm w-100" data-bs-toggle="modal" data-bs-target="#confirmDeleteBackdrop">Suspend Account</a>
                         </td>
                     </tr>
                     <tr>
@@ -117,7 +117,7 @@
                         <td>client93@gmail.com</td>
                         <td>An account for the firm "Homium Agency"</td>
                         <td>
-                            <a class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteBackdrop">Deactivate Account</a>
+                            <a class="btn btn-success btn-sm w-100" data-bs-toggle="modal" data-bs-target="#confirmDeleteBackdrop">Unsuspend Account</a>
                         </td>
                     </tr>
                     <tr>
@@ -125,7 +125,7 @@
                         <td>staragency@gmail.com</td>
                         <td>An account for the firm "Star Agency"</td>
                         <td>
-                            <a class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteBackdrop">Deactivate Account</a>
+                            <a class="btn btn-danger btn-sm w-100" data-bs-toggle="modal" data-bs-target="#confirmDeleteBackdrop">Suspend Account</a>
                         </td>
                     </tr>
                     </tbody>
@@ -142,7 +142,7 @@
 
             <div class="container my-3 bg-opacity-5 shadow-labs p-5 mx-auto" id="creatorPanel">
 
-                <h1 class="display-5 text-center text-labs my-2 rounded-3">Creator's Panel</h1>
+                <h1 class="display-5 text-center text-labs my-2 rounded-3">Cube Management Panel</h1>
                 <div class="border border-3 border-labs w-90 mx-auto d-block opacity-50 mb-5 rounded-pill"></div>
                 <div class="mt-5 p-3 w-75 mx-auto">
                     <a class="btn btn-secondary btn-lg d-block p-3 col-lg-6 col-sm-8 mx-auto " data-bs-toggle="modal" data-bs-target="#addCubeBackdrop">
