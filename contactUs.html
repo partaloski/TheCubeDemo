@@ -5,9 +5,11 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="container-fluid w-100 m-0 sticky-top p-0 bg-labs shadow mb-5">
+
+    <div class="container-fluid w-100 m-0 sticky-top p-0 bg-labs shadow">
         <nav class="navbar container-fluid px-5 navbar-dark bg-labs pb-3">
             <a class="navbar-brand d-lg-block d-sm-none" href="index.html"><img width="64" height="64" src="cube/logo.png"/></a>
             <a class="navbar-brand d-sm-block d-lg-none" href="index.html"><img width="128" height="128" src="cube/logo.png"/></a>
@@ -16,38 +18,47 @@
             </button>
             <div class="collapse navbar-collapse bg-darklabs rounded-3 text-dark p-3 fade" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item my-2">
                         <a class="nav-link" href="index.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                            </svg>
-                            Home
+                            <div class="d-sm-inline d-lg-none">
+                                <i class="fa-solid fa-house-chimney-user fa-2x"></i>
+                                <span class="display-6">Home</span>
+                            </div>
+                            <div class="d-sm-none d-lg-inline">
+                                <i class="fa-solid fa-house-chimney-user fa-lg"></i>
+                                <span class="display-11">Home</span>
+                            </div>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-                                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-                            </svg>
-                            About Us
+                    <li class="nav-item my-2">
+                        <a class="nav-link " aria-current="page" href="aboutUs.html">
+                            <div class="d-sm-inline d-lg-none">
+                                <i class="fa-solid fa-user-group fa-2x"></i>
+                                <span class="display-6">About Us</span>
+                            </div>
+                            <div class="d-sm-none d-lg-inline">
+                                <i class="fa-solid fa-user-group fa-lg"></i>
+                                <span class="display-11">About Us</span>
+                            </div>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active bg-gradient-fade px-2 py-1 rounded-2 text-dark" aria-current="page" href="contactUs.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                            </svg>
-                            Contact Us
+                    <li class="nav-item my-2">
+                        <a class="nav-link bg-gradient-fade px-2 py-1 rounded-2 text-dark active" aria-current='page' href="contactUs.html">
+                            <div class="d-sm-inline d-lg-none">
+                                <i class="fa-solid fa-paper-plane fa-2x"></i>
+                                <span class="display-6">Contact Us</span>
+                            </div>
+                            <div class="d-sm-none d-lg-inline">
+                                <i class="fa-solid fa-paper-plane fa-lg"></i>
+                                <span class="display-11">Contact Us</span>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="container mx-auto my-auto bg-dark bg-opacity-5 p-5 rounded-3 m-5 shadow-labs my-5 mt-5">
+    <div class="container d-lg-block d-sm-none mx-auto my-auto bg-dark bg-opacity-5 p-5 rounded-3 m-5 shadow-labs my-5 mt-5">
         <h1 class="display-3 text-center text-labs m-2">Contact Us</h1>
         <ul class="list-group col-6 mx-auto shadow">
             <li class="list-group-item text-center list-group-item-labs list-group-item-info p-3">
@@ -66,6 +77,35 @@
         <a class="btn btn-darklabs mx-auto d-block w-50 btn-lg my-5" id="expandContentBtn">Where to find us?</a>
         <div id="carouselExampleSlidesOnly" class="carousel slide w-75 mx-auto rounded-3 m-3 p-3 bg-darklabs shadow mt-5" data-bs-ride="carousel">
             <h3 class="display-6 text-light">Where to find us:</h3>
+            <small class="text-light opacity-50 my-3">Static Image for now, for demo purposes.</small>
+            <div class="carousel-inner mt-2">
+                <div class="carousel-item active">
+                    <img src="https://elfsight.com/wp-content/uploads/2020/03/google-maps-examples1.jpg" class="rounded-2 d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-sm-block d-lg-none mx-auto my-auto bg-dark bg-opacity-5 p-5 rounded-3 m-5 shadow-labs my-5 mt-5">
+        <h1 class="display-1 text-center text-labs m-2">Contact Us</h1>
+        <ul class="list-group col-11 mx-auto shadow">
+            <li class="list-group-item text-center list-group-item-labs list-group-item-info p-3">
+                <span class="display-5">[Organization's Phone Number]</span>
+            </li>
+            <li class="list-group-item text-center list-group-item-labs list-group-item-info p-3">
+                <span class="display-5">[Organization's E-Mail]</span>
+            </li>
+            <li class="list-group-item text-center list-group-item-labs list-group-item-info p-3">
+                <span class="display-5">[Organization's Street and Number]</span>
+            </li>
+            <li class="list-group-item text-center list-group-item-labs list-group-item-info p-3">
+                <span class="display-5">[Organization's City, Country]</span>
+            </li>
+        </ul>
+        <a class="btn btn-darklabs mx-auto d-block w-50 btn-lg my-5" id="expandContentBtn1">
+            <span class="display-6">Where to find us?</span>
+        </a>
+        <div id="carouselExampleSlidesOnly2" class="carousel slide w-75 mx-auto rounded-3 m-3 p-3 bg-darklabs shadow mt-5" data-bs-ride="carousel">
+            <h3 class="display-5 text-light">Where to find us:</h3>
             <small class="text-light opacity-50 my-3">Static Image for now, for demo purposes.</small>
             <div class="carousel-inner mt-2">
                 <div class="carousel-item active">

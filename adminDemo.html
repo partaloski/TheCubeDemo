@@ -5,63 +5,70 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="container-fluid w-100 m-0 sticky-top p-0 bg-labs shadow mb-5">
-        <nav class="navbar container-fluid px-5 navbar-dark bg-labs pb-3">
-            <a class="navbar-brand d-lg-block d-sm-none" href="index.html"><img width="64" height="64" src="cube/logo.png"/></a>
-            <a class="navbar-brand d-sm-block d-lg-none" href="index.html"><img width="128" height="128" src="cube/logo.png"/></a>
-            <a class="nav-item ms-auto me-3 text-decoration-none btn btn-outline-light d-lg-block d-sm-none">
-                Hello, Admin
-            </a>
-            <a class="nav-item ms-auto me-3 text-decoration-none btn btn-outline-light d-lg-none d-sm-block btn-lg">
-                Hello, Admin
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse bg-darklabs rounded-3 text-dark p-3 fade" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                            </svg>
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-                                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-                            </svg>
-                            About Us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactUs.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                            </svg>
-                            Contact Us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active bg-gradient-fade px-2 py-1 rounded-2 text-dark" aria-current="page" href="adminDemo.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
-                                <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
-                                <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
-                            </svg>
-                            Admin's Dashboard
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<div class="container-fluid w-100 m-0 sticky-top p-0 bg-labs shadow">
+    <nav class="navbar container-fluid px-5 navbar-dark bg-labs pb-3">
+        <a class="navbar-brand d-lg-block d-sm-none" href="index.html"><img width="64" height="64" src="cube/logo.png"/></a>
+        <a class="navbar-brand d-sm-block d-lg-none" href="index.html"><img width="128" height="128" src="cube/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-darklabs rounded-3 text-dark p-3 fade" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item my-2">
+                    <a class="nav-link" href="index.html">
+                        <div class="d-sm-inline d-lg-none">
+                            <i class="fa-solid fa-house-chimney-user fa-2x"></i>
+                            <span class="display-6">Home</span>
+                        </div>
+                        <div class="d-sm-none d-lg-inline">
+                            <i class="fa-solid fa-house-chimney-user fa-lg"></i>
+                            <span class="display-11">Home</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item my-2">
+                    <a class="nav-link " aria-current="page" href="aboutUs.html">
+                        <div class="d-sm-inline d-lg-none">
+                            <i class="fa-solid fa-user-group fa-2x"></i>
+                            <span class="display-6">About Us</span>
+                        </div>
+                        <div class="d-sm-none d-lg-inline">
+                            <i class="fa-solid fa-user-group fa-lg"></i>
+                            <span class="display-11">About Us</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item my-2">
+                    <a class="nav-link" href="contactUs.html">
+                        <div class="d-sm-inline d-lg-none">
+                            <i class="fa-solid fa-paper-plane fa-2x"></i>
+                            <span class="display-6">Contact Us</span>
+                        </div>
+                        <div class="d-sm-none d-lg-inline">
+                            <i class="fa-solid fa-paper-plane fa-lg"></i>
+                            <span class="display-11">Contact Us</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item my-2">
+                    <a class="nav-link bg-gradient-fade px-2 py-1 rounded-2 text-dark active" aria-current='page' href="adminDemo.html">
+                        <div class="d-sm-inline d-lg-none">
+                            <i class="fa-solid fa-house fa-2x"></i>
+                            <span class="display-6">Dashboard</span>
+                        </div>
+                        <div class="d-sm-none d-lg-inline">
+                            <i class="fa-solid fa-house fa-lg"></i>
+                            <span class="display-11">Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 
         <div class="col-9 d-flex flex-row justify-content-between mx-auto mb-5 shadow rounded position-sticky">
@@ -69,19 +76,13 @@
                     <ul class="list-unstyled list-group d-flex flex-sm-column flex-lg-row w-100">
                         <li class="list-unstyled list-group-item list-group-flush  w-100 text-center border-0 mx-auto">
                             <a href="#" class="d-block bg-darklabs text-light text-decoration-none p-4" id="adminPanelBtn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-people-fill" viewBox="-2 0 20 20">
-                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-                                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-                                </svg>
+                                <i class="fa-solid fa-user-group fa-3x"></i>
                                 <span class="display-6">User Management Panel</span>
                             </a>
                         </li>
                         <li class="list-unstyled list-group-item list-group-flush  w-100 text-center border-0 mx-auto">
                             <a href="#" class="d-block bg-secondary text-light text-decoration-none p-4" id="creatorPanelBtn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-boxes" viewBox="-2 0 20 20">
-                                    <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
-                                </svg>
+                                <i class="fa-solid fa-cubes fa-3x"></i>
                                 <span class="display-6">Cube Management Panel</span>
                             </a>
                         </li>
@@ -140,15 +141,13 @@
                 </div>
             </div>
 
-            <div class="container my-3 bg-opacity-5 shadow-labs p-5 mx-auto" id="creatorPanel">
+            <div class="container my-3 bg-opacity-5 shadow-labs p-5 mx-auto mt-5" id="creatorPanel">
 
                 <h1 class="display-5 text-center text-labs my-2 rounded-3">Cube Management Panel</h1>
                 <div class="border border-3 border-labs w-90 mx-auto d-block opacity-50 mb-5 rounded-pill"></div>
                 <div class="mt-5 p-3 w-75 mx-auto">
                     <a class="btn btn-secondary btn-lg d-block p-3 col-lg-6 col-sm-8 mx-auto " data-bs-toggle="modal" data-bs-target="#addCubeBackdrop">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-                        </svg>
+                        <i class="fa-regular fa-square-plus fa-lg"></i>
                         <span class="display-10">Add a new Cube</span>
                     </a>
                 </div>
@@ -165,17 +164,11 @@
                             <h5 class="card-title">Demo Cube</h5>
                             <h6 class="card-subtitle mb-3 mt-1 text-muted">Demo Description</h6>
                             <a href="cubeDemo.html" class="card-link btn btn-darklabs my-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                </svg>
+                                <i class="fa-solid fa-file-pen"></i>
                                 Manage
                             </a>
                             <a href="cubePreviewDemo.html" class="card-link btn btn-info text-light border border-1 border-primary my-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                </svg>
+                                <i class="fa-solid fa-eye"></i>
                                 View
                             </a>
                         </div>
